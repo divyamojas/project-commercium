@@ -1,0 +1,85 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+*/node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+
+
+# Build output
+/dist/
+/build/
+
+# Dependency directories
+/npm-debug.log
+/yarn-debug.log
+/yarn-error.log
+
+# Environment variables
+/.env
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+
+# VSCode directory
+.vscode/
+
+# TypeScript compiler output
+*.tsbuildinfo
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE and editor folders
+.idea/
+
+# React Native
+.expo/
+
+# Next.js build outputs (if using Next.js)
+.next/
+
+# Serverless deployment folders (if using)
+.serverless/
+
+# JetBrains IDE folders
+/.idea/
+
+# SWC (Rust-based compiler) output
+.swc/
+
+# Npm package lock (if using Yarn, use yarn.lock instead)
+*/package-lock.json
+
+# Expo specific files
+.expo/
+
+# Other optional files to ignore
+coverage/    # If using code coverage tools
