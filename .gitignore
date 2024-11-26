@@ -83,3 +83,5 @@ Thumbs.db
 
 # Other optional files to ignore
 coverage/    # If using code coverage tools
+
+.env

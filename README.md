@@ -1,6 +1,6 @@
 # **Project-Commercium: Detailed Plan**
 
-![Project Commercium](https://via.placeholder.com/1200x400?text=Project-Commercium)  
+![Project Commercium](https://via.placeholder.com/1200x400?text=Project-Commercium)
 
 ---
 
@@ -38,7 +38,6 @@
    - Real-time feedback.  
    - Leaderboards for competition.  
    - Topic-based quizzes with difficulty levels.  
-   ![Quizzes Mockup](https://via.placeholder.com/800x400?text=Quizzes+Mockup)  
 
 2. **Mock Exams**  
    - Timed assessments mimicking real-world exams.  
@@ -86,74 +85,88 @@
 ## **Feature Development Phases**
 
 ### **Phase 1: Core Functionality**
-- Quizzes  
-- Mock Exams  
-- Blogs  
-- Flashcards  
-- User Authentication  
+- User authentication (Google sign-in via Firebase and username-password login using JWT).  
+- Admin dashboards for different user classes.  
 
-### **Phase 2: Engagement Features**
-- Gamification  
-- User Analytics  
-- Slide Videos  
+### **Phase 2: Articles Website**
+- Create an article builder (suggestions include Draft.js or Quill.js).  
+- Approval workflow for articles (Normal Users -> Moderation Users).  
+- Publish and display articles with features like likes, comments, and sharing.
 
-### **Phase 3: Advanced Features**
-- Personalized Recommendations  
-- Discussion Forums  
-- Live Sessions  
-- Interactive Exercises  
+### **Phase 3: Engagement Features**
+- Gamification (badges, leaderboards).  
+- User Analytics (performance tracking, dashboards).  
+- Interactive flashcards.  
 
-### **Phase 4: Nice-to-Have Features**
-- Downloadable Resources  
+### **Phase 4: Advanced Features**
+- Personalized Recommendations.  
+- Discussion Forums.  
+- Live Sessions.  
+- Interactive Exercises.  
+
+### **Phase 5: Additional Features**
+- Downloadable Resources.  
+- Expansion to include foreign exams and additional exams outside of the Indian curriculum.  
 
 ---
 
 ## **Architecture Overview**
 
 ### **Frontend**  
-- Built with **React.js** for a responsive and dynamic interface.  
+- Built with **React (TypeScript + SWC)** for a responsive and dynamic interface.  
 - Styling using **Tailwind CSS**.  
 
 ### **Backend**  
-- API server with **Node.js** and **Express.js**.  
-- Data storage in **PostgreSQL**.  
+- Built with **Java (Spring Boot)** for scalable and robust backend services.  
+- Authentication with **Firebase** for Google login and **JWT** for username-password login.  
+- REST APIs to serve the frontend application.
+
+### **Database**  
+- **PostgreSQL** for structured and scalable data storage.  
 
 ### **Hosting**  
-- Frontend: **Netlify/Vercel**.  
-- Backend: **Railway/Render**.  
-- Database: **AWS RDS** or **MongoDB Atlas** for scalable hosting.
+- Frontend: **Netlify** or **Vercel**.  
+- Backend: **AWS EC2** or **Heroku**.  
+- Database: **AWS RDS** or **ElephantSQL**.  
 
 ---
 
 ## **Tech Stack**
 
-| Layer          | Technology           |
-|-----------------|----------------------|
-| Frontend       | React.js, Tailwind CSS |
-| Backend        | Node.js, Express.js   |
-| Database       | PostgreSQL or MongoDB |
-| Hosting        | Netlify, Railway      |
-| API Testing    | Postman, Swagger      |
+| Layer          | Technology              |
+|-----------------|-------------------------|
+| Frontend       | React.js, TypeScript, SWC, Tailwind CSS |
+| Backend        | Java, Spring Boot       |
+| Authentication | Firebase, JWT           |
+| Database       | PostgreSQL              |
+| Hosting        | Netlify, AWS, Heroku    |
+| Article Builder| Draft.js, Quill.js, or Editor.js |
+| API Testing    | Postman, Swagger        |
 
 ---
 
 ## **Roadmap**
 
-### **Milestone 1 (Month 1)**  
-- [ ] Set up the development environment.  
-- [ ] Build core features (Quizzes, Mock Exams, Blogs).  
+### **Milestone 1: Week 1**
+- [ ] Set up development environments (frontend and backend).  
+- [ ] Implement Firebase authentication for Google sign-in.  
+- [ ] Build username-password-based login with JWT.
 
-### **Milestone 2 (Month 2)**  
-- [ ] Integrate gamification and analytics.  
-- [ ] Add flashcards with spaced repetition.  
+### **Milestone 2: Week 2**
+- [ ] Create user classes (Normal Users, Moderation Users, Super Users).  
+- [ ] Build dashboards for each user class.
 
-### **Milestone 3 (Month 3)**  
-- [ ] Implement advanced features (forums, recommendations).  
-- [ ] Test and debug thoroughly.  
+### **Milestone 3: Week 3**
+- [ ] Develop the article creation feature using Draft.js or Quill.js.  
+- [ ] Implement article approval workflow.  
+- [ ] Add basic analytics for published articles.
 
-### **Milestone 4 (Month 4)**  
-- [ ] Deploy the application.  
-- [ ] Collect feedback and iterate.  
+### **Milestone 4: Week 4**
+- [ ] Test and deploy the website (frontend and backend).  
+- [ ] Collect feedback for improvements.
+
+### **Phase 2-5 Timelines**
+- [ ] To be updated based on Phase 1 progress.
 
 ---
 
